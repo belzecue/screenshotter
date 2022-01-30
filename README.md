@@ -28,8 +28,6 @@ Windows only.  Solution coded circa 2018.
 
 > ffmpeg -framerate 15 -i image-%06d.png -vf scale=-1:720 -r 15 -c:v libx264 -crf 20 -pix_fmt yuv420p out.mp4
 
-and hit enter to activate it.
-
 You should see a bunch of output showing it is processing the images into a movie.  When done, the movie file will be called "out.mp4".
 
 Breaking down the command...
