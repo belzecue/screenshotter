@@ -26,7 +26,7 @@ Windows only.  Solution coded circa 2018.
 - In the console, drill down to your folder containing your image files
 - Paste this into the console at the prompt:
 
-ffmpeg -framerate 15 -i image-%06d.png -vf scale=-1:720 -r 15 -c:v libx264 -crf 20 -pix_fmt yuv420p out.mp4
+> ffmpeg -framerate 15 -i image-%06d.png -vf scale=-1:720 -r 15 -c:v libx264 -crf 20 -pix_fmt yuv420p out.mp4
 
 and hit enter to activate it.
 
