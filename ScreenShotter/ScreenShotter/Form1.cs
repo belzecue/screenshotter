@@ -57,6 +57,17 @@ namespace ScreenShotter
 										Screen.PrimaryScreen.Bounds.Size,
 										CopyPixelOperation.SourceCopy);
 
+			// timestamp
+			if (cbOverlayTime.Checked)
+			{
+				gfxScreenshot.FillRectangle(Brushes.White, 0, 0, 300, 30);
+				gfxScreenshot.DrawString(
+					DateTime.Now.ToString("s")
+					, new Font("Courier New", 18f, FontStyle.Bold)
+					, Brushes.Black, 2, 2
+				);
+			}
+
 			// Save the screenshot to the specified path that the user has chosen.
 			bmpScreenshot.Save(
 				string.Concat(

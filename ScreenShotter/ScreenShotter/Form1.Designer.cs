@@ -43,6 +43,7 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.numDigits = new System.Windows.Forms.NumericUpDown();
 			this.cbFromLast = new System.Windows.Forms.CheckBox();
+			this.cbOverlayTime = new System.Windows.Forms.CheckBox();
 			((System.ComponentModel.ISupportInitialize)(this.numSeconds)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.numDigits)).BeginInit();
 			this.SuspendLayout();
@@ -97,7 +98,7 @@
 			// 
 			// btnStart
 			// 
-			this.btnStart.Location = new System.Drawing.Point(484, 163);
+			this.btnStart.Location = new System.Drawing.Point(383, 204);
 			this.btnStart.Name = "btnStart";
 			this.btnStart.Size = new System.Drawing.Size(75, 23);
 			this.btnStart.TabIndex = 5;
@@ -182,11 +183,25 @@
 			this.cbFromLast.Text = "Increment number from last";
 			this.cbFromLast.UseVisualStyleBackColor = true;
 			// 
+			// cbOverlayTime
+			// 
+			this.cbOverlayTime.AutoSize = true;
+			this.cbOverlayTime.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.cbOverlayTime.Checked = true;
+			this.cbOverlayTime.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.cbOverlayTime.Location = new System.Drawing.Point(403, 134);
+			this.cbOverlayTime.Name = "cbOverlayTime";
+			this.cbOverlayTime.Size = new System.Drawing.Size(112, 17);
+			this.cbOverlayTime.TabIndex = 15;
+			this.cbOverlayTime.Text = "Overlay timestamp";
+			this.cbOverlayTime.UseVisualStyleBackColor = true;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(583, 257);
+			this.Controls.Add(this.cbOverlayTime);
 			this.Controls.Add(this.cbFromLast);
 			this.Controls.Add(this.numDigits);
 			this.Controls.Add(this.label5);
@@ -228,6 +243,7 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.NumericUpDown numDigits;
 		private System.Windows.Forms.CheckBox cbFromLast;
+		private System.Windows.Forms.CheckBox cbOverlayTime;
 	}
 }
 
